@@ -1,0 +1,26 @@
+<header class="text-center">
+    <p><strong>Aproveitamento: </strong>
+        {{correctsAnswers}} / {{summaryQuestionnaire.length}} | ({{correctPercentage}}%)
+        </p>
+    <p>Clique em uma questão para ver mais detalhes</p>
+</header>
+<hr>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Correta</th>
+                <th>Marcada</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="response in summaryQuestionnaire" class="{{response.correct ? 'success' : 'danger'}}">
+                <td>{{$index + 1}}</td>
+                <td>{{response.correctAnswer}}</td>
+                <td>{{response.userAnswer}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,11 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4><strong>Questão </strong>{{actualQuestion + 1}} / {{questions.length}}</h4>
+        <textarea class="form-control question" rows="8" readonly>{{questions[actualQuestion].question}}</textarea>
+    </div>
+    <div class="panel-body">
+        <ul>
+            <li ng-repeat="answer in questions[actualQuestion].responses" ng-click="answerQuestion(answer.correct, $index)">{{answer.answer}}</li>
+        </ul>
+    </div>
+</div>
