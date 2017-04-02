@@ -1,0 +1,62 @@
+.margin-top-10{margin-top: 10px}
+.margin-top-15{margin-top: 15px}
+.margin-top-65{margin-top: 65px}
+img.logo-dp{
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.reset-padding{padding: 0}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 15px;
+    border-bottom: 1px solid #CCC;
+}
+
+ul li:hover{
+    background: #EEE;
+}
+
+.high-score {margin-top: 50px}
+.high-score h1{font-size: 24px;}
+header{margin-top: 45px}
+
+.panel-primary{border-color: transparent !important;}
+textarea.form-control{
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    resize: none !important;
+
+}
+
+table.table tr td{
+    padding-top : 15px !important;
+    padding-bottom: 15px !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    text-transform: uppercase !important;
+}
+
+
+.top-bar{
+	position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+body{
+	margin-top: 40px;
+}
+
+.panel{
+    box-shadow: none !important;
+    border: none !important;
+}

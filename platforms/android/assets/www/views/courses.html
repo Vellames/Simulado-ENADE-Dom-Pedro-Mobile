@@ -1,0 +1,15 @@
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 reset-padding">
+            <input type="text" class="form-control" placeholder="Pesquise seu curso..." ng-model="searchText">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 reset-padding">
+            <ul>
+                <li ng-repeat="course in courses | filter:searchText" ng-click="loadQuestions(course._id)">{{course.name}}</li>
+            </ul>
+        </div>
+    </div>
+</section>

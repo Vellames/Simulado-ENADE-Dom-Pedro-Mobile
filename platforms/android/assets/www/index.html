@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="app">
+    <head>
+        <title>Simulado ENADE Dom Pedro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-route.min.js"></script>
+
+        <script src="js/utils/auto-size-text-area.js"></script>
+        <script src="js/config/app.js"></script>
+        
+        <script src="js/modules/shared-properties.js"></script>
+        <script src="js/controllers/home-controller.js"></script>
+        <script src="js/controllers/courses-controller.js"></script>
+        <script src="js/controllers/questions-controller.js"></script>
+        <script src="js/controllers/result-list-controller.js"></script>
+    </head>
+    <body>
+        <div class="top-bar btn-primary">
+            <button class="btn btn-primary">
+                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div ng-view></div>
+
+    </body>
+</html>
