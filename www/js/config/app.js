@@ -1,4 +1,8 @@
-app = angular.module('app',['ngRoute']);
+document.addEventListener('deviceready', function onDeviceReady() {
+    angular.bootstrap(document.getElementById("body"), ['app']);
+}, false);
+
+app = angular.module('app', ["ngRoute"]);
 
 app.config(['$routeProvider',function($routeProvider){
     $routeProvider
@@ -23,7 +27,7 @@ app.config(['$routeProvider',function($routeProvider){
         });
 }]);
 
-app.run(['$rootScope',function($rootScope){
+app.run(['$rootScope',function($rootScope, $location){
     //$rootScope.baseUrl = "http://localhost:3000/api";
     $rootScope.baseUrl = "http://enade.herokuapp.com/api";
 
@@ -35,4 +39,9 @@ app.run(['$rootScope',function($rootScope){
             get : "/questions"
         }
     }
+    
+    $rootScope.backScreenCordova = function(){
+        location.href = "index.html";
+    }
+    
 }]);

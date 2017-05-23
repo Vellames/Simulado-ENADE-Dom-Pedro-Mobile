@@ -7,6 +7,7 @@
         <link type="text/css" rel="stylesheet" href="css/reset.css">
         <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
         <link type="text/css" rel="stylesheet" href="css/style.css">
+        <script src="cordova.js"></script>
         <script src="js/jquery-3.2.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/angular.min.js"></script>
@@ -20,14 +21,15 @@
         <script src="js/controllers/courses-controller.js"></script>
         <script src="js/controllers/questions-controller.js"></script>
         <script src="js/controllers/result-list-controller.js"></script>
+        
+        <script src="js/config/back.js"></script>
     </head>
-    <body>
+    <body id="body">
         <div class="top-bar btn-primary">
-            <button class="btn btn-primary">
+            <button class="btn btn-primary" ng-click="backScreenCordova()">
                 <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
             </button>
         </div>
         <div ng-view></div>
-
     </body>
 </html>

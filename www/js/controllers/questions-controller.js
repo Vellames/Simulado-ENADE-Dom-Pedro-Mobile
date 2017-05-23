@@ -30,4 +30,6 @@ app.controller("questionsController", function($scope, $http, $location ,$routeP
             $location.path("/result-list");
         }
     }
+    
+    
 });
